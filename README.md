@@ -6,5 +6,5 @@ Propuesta de trabajo final de grado.
 
 ## Autores
 
-    * Rodrigo Parra
-    * Jorge Ramírez
+* Rodrigo Parra
+* Jorge Ramírez
