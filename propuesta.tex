@@ -1,11 +1,16 @@
 \documentclass[a4paper,12pt]{article}
 
-\usepackage{natbib}
-\usepackage{graphicx}
 \usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{pdflscape}
-\usepackage[spanish]{babel}
+
+% para las referencias se utiliza biblatex
+\usepackage[style=numeric,backend=biber]{biblatex}
+
+\addbibresource{referencias.bib}
 
 \begin{document}
 
@@ -17,7 +22,7 @@
 \input{./metodologia.tex}
 \input{./plan.tex}
 
-\bibliography{referencias}
-\bibliographystyle{plainnat}
+
+\printbibliography
 
 \end{document}

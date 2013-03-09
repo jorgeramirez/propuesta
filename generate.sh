@@ -1,9 +1,10 @@
 #/bin/bash
 
 NAME=propuesta
-SRC=$NAME.tex
 
-pdflatex $SRC
-bibtex $NAME
-pdflatex $SRC
-pdflatex $SRC
+rm *.aux *.log *.b{lg,bl,cf} *.run.xml
+
+pdflatex $NAME
+biber $NAME
+pdflatex $NAME
+pdflatex $NAME
