@@ -2,13 +2,15 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{pdflscape}
+\usepackage{enumitem}
 
 % para las referencias se utiliza biblatex
-\usepackage[style=numeric,backend=biber]{biblatex}
+\usepackage[style=numeric,sorting=none,backend=biber]{biblatex}
 
 \addbibresource{referencias.bib}
 
@@ -21,8 +23,9 @@
 \input{./alcance.tex}
 \input{./metodologia.tex}
 \input{./plan.tex}
-
+\input{./estructura.tex}
 
 \printbibliography
 
+\input{./informacion.tex}
 \end{document}
